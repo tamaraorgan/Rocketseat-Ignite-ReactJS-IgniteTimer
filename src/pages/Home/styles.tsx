@@ -15,6 +15,16 @@ export const HomeContainer = styled.main`
         justify-content: center;
 
         gap: 3.5rem;
+
+        label {
+            position: relative;
+
+            datalist {
+                position: absolute;
+                top:0;
+
+            }
+        }
     }
 `
 export const FormContainer = styled.div`
@@ -107,6 +117,10 @@ const BaseInput = styled.input`
 
 export const TaskInput = styled(BaseInput)`
     flex: 1;
+
+    &::-webkit-calendar-picker-indicator {
+        display: none !important;
+    }
 `
 
 export const MinutesAmountInput = styled(BaseInput)`
