@@ -20,18 +20,18 @@ export const HeaderContainer = styled.header`
       align-items: center;
 
       text-decoration: none;
-      color: ${(props) => props.theme['gray-100']};
+      color: ${(props) => props.theme['fourth-color']};
       padding: 0.625rem;
 
       border-top: 3px solid transparent;
       border-bottom: 3px solid transparent;
 
       &:hover {
-        border-bottom: 3px solid ${(props) => props.theme['green-500']};
+        border-bottom: 3px solid ${(props) => props.theme['first-color']};
       }
 
       &.active {
-        color: ${(props) => props.theme['green-500']};
+        color: ${(props) => props.theme['first-color']};
       }
     }
   }
